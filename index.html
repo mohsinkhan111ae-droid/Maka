@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>100% Powerful Website — VIP MODE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="logo" class="logo">
+      <div>
+        <div class="title">100% Powerful Website</div>
+        <div class="subtitle">VIP MODE — Clean, modern & colorful</div>
+      </div>
+    </div>
+    <div class="active" id="activeUsers">Active Users: 10,235</div>
+  </header>
+
+  <main class="main">
+    <section class="card main-card">
+      <h1 class="card-title">VIP-MODE-PANEL</h1>
+      <p class="intro">Enter a <strong>Period Number</strong> below and press <strong>Get Prediction</strong>. Result shows <strong>BIG</strong> (5–9) or <strong>SMALL</strong> (0–4) — one digit only.</p>
+
+      <div class="form-row">
+        <label for="periodInput" class="label">Period Number</label>
+        <input id="periodInput" class="input" type="text" placeholder="Enter period number (e.g., 20250915)" />
+      </div>
+
+      <div class="controls-row">
+        <button id="getBtn" class="btn primary">Get Prediction</button>
+      </div>
+
+      <div class="result-row" aria-live="polite">
+        <div class="result-card" id="resultCard">
+          <div class="result-label">RESULT</div>
+          <div class="result-size" id="resultSize">—</div>
+          <div class="result-number" id="resultNumber">—</div>
+          <div class="result-color" id="resultColor">----</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="popSound" src="assets/pop.wav" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
